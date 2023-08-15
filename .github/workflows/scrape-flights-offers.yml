@@ -8,21 +8,18 @@ on:
 
   schedule:
     - cron: "*/5 * * * *"
-
+ 
 jobs:
-  build:
+build-node:
     runs-on: ubuntu-22.04
+    container: node:16
     steps:
+      - run: node --version
+      - run: npm --version
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 7.14.2
-          run_install: true
+      - run: npm install
+      - run: npm run scrape
       - run: |
-          npm run scrape
           git config user.name ScrapingBot
           git diff --quiet && git diff --staged --quiet || git commit -am "[bot] update latest flight offers"
           git push origin main
