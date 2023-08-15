@@ -2,27 +2,21 @@ name: Scrape Edreams website
 on:
   schedule:
     - cron: "*/5 * * * *"
-  # workflow_dispatch:
-permissions:
-  contents: write
 jobs:
-  resources:
-    name: Scrape
+  scrape:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - run: npm ci
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 16  # Adjust the version if needed
 
-      - name: Fetch resources
-        run: node main/index.js
+    - name: Install dependencies
+      run: npm install
 
-      - name: Commit changes
-        uses: test-room-7/action-update-file@v1
-      - run: |
-          git config user.name ScrapingBot
-          git diff --quiet && git diff --staged --quiet || git commit -am "[bot] update latest flight offers "
-          git push origin main
+    - name: Run Playwright script
+      run: node main/index.js
