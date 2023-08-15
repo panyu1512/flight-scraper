@@ -1,17 +1,28 @@
 name: Scrape Edreams website
 on:
-  workflow_dispatch:
-
-  repository_dispatch:
-    types:
-      - webhook
-
   schedule:
     - cron: "*/5 * * * *"
-
+  # workflow_dispatch:
+permissions:
+  contents: write
 jobs:
-  build:
-    runs-on: ubuntu-22.04
+  resources:
+    name: Scrape
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: ./
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm ci
+
+      - name: Fetch resources
+        run: node main/index.js
+        with:
+          version: 7.14.2
+          run_install: true
+      - run: |
+          git config user.name ScrapingBot
+          git diff --quiet && git diff --staged --quiet || git commit -am "[bot] update latest flight offers "
+          git push origin main
