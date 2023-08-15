@@ -20,11 +20,11 @@ This will launch a browser, navigate to the specified URL on the eDreams website
 
 ## GitHub Action
 
-This repository is set up with a GitHub Action workflow that automatically runs the scraper script at specified intervals and updates the `flight_offers.json` file in the repository. The workflow configuration is defined in `.github/workflows/scrape.yml`.
+This repository is set up with a GitHub Action workflow that automatically runs the scraper script at specified intervals and updates the `flight_offers.json` file in the repository. The workflow configuration is defined in `.scrape-flights-offers.yml`.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://mit-license.org/) file for details.
 
 ## Disclaimer
 
