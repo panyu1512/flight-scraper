@@ -23,7 +23,7 @@ jobs:
           run_install: true
       - run: |
           npm install
-          npm run scrape
+          node dist/index.js
           git config user.name ScrapingBot
           git diff --quiet && git diff --staged --quiet || git commit -am "[bot] update latest flight offers "
           git push origin main
