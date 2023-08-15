@@ -1,32 +1,32 @@
 [
   {
-    "outbound flight": "Lun, 21 Ago",
-    "return flight": "Mié, 23 Ago",
+    "outbound flight": "(PMI-OPO) Lun, 21 Ago",
+    "return flight": "(OPO-PMI) Mié, 23 Ago",
     "price": "161€"
   },
   {
-    "outbound flight": "Jue, 26 Oct",
+    "outbound flight": "(PMI-OPO) Jue, 26 Oct",
     "return flight": null,
     "price": "24€"
   },
   {
-    "outbound flight": "Mar, 29 Ago",
-    "return flight": "Mié, 30 Ago",
+    "outbound flight": "(PMI-OPO) Mar, 29 Ago",
+    "return flight": "(OPO-PMI) Mié, 30 Ago",
     "price": "118€"
   },
   {
-    "outbound flight": "Vie, 01 Sep",
-    "return flight": "Dom, 03 Sep",
+    "outbound flight": "(PMI-OPO) Vie, 01 Sep",
+    "return flight": "(OPO-PMI) Dom, 03 Sep",
     "price": "246€"
   },
   {
-    "outbound flight": "Mar, 05 Sep",
-    "return flight": "Vie, 08 Sep",
+    "outbound flight": "(PMI-OPO) Mar, 05 Sep",
+    "return flight": "(OPO-PMI) Vie, 08 Sep",
     "price": "193€"
   },
   {
-    "outbound flight": "Dom, 10 Sep",
-    "return flight": "Jue, 14 Sep",
+    "outbound flight": "(PMI-OPO) Dom, 10 Sep",
+    "return flight": "(OPO-PMI) Jue, 14 Sep",
     "price": "143€"
   }
 ]
