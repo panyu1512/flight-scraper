@@ -10,7 +10,7 @@ on:
     - cron: "*/5 * * * *"
  
 jobs:
-build-node:
+build:
     runs-on: ubuntu-22.04
     container: node:16
     steps:
