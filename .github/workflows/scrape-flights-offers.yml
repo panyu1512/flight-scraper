@@ -7,19 +7,23 @@ on:
       - webhook
 
   schedule:
-    - cron: "*/5 * * * *"
- 
+    - cron: "*/1 * * * *"
+
 jobs:
-build:
+  build:
     runs-on: ubuntu-22.04
-    container: node:16
     steps:
-      - run: node --version
-      - run: npm --version
       - uses: actions/checkout@v3
-      - run: npm install
-      - run: npm run scrape
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7.14.2
+          run_install: true
       - run: |
+          npm run install
+          npm run scrape
           git config user.name ScrapingBot
-          git diff --quiet && git diff --staged --quiet || git commit -am "[bot] update latest flight offers"
+          git diff --quiet && git diff --staged --quiet || git commit -am "[bot] update latest flight offers "
           git push origin main
