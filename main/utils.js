@@ -1,3 +1,5 @@
+const fs = require('fs');
+
 function getFlightOffers(data){
     const flights = [];
 
@@ -22,10 +24,24 @@ function getFlightOffers(data){
     
       flights.push(currentFlight);
     }
-    
-    console.log(flights);
-}
+
+    return flights;
+};
+
+function writeDBFile(data){
+    const jsonData = JSON.stringify(data, null, 2); // Convert the data to formatted JSON
+
+    fs.writeFile('./db/flightOffers.json', jsonData, 'utf8', (err) => {
+      if (err) {
+        console.error('Error writing JSON file:', err);
+      } else {
+        console.log('JSON file with flight data has been created successfully.');
+      }
+    });
+};
+
 
 module.exports = {
-    getFlightOffers
+    getFlightOffers,
+    writeDBFile
 };

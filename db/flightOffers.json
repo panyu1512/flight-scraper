@@ -1,0 +1,32 @@
+[
+  {
+    "outbound flight": "Lun, 21 Ago",
+    "return flight": "Mié, 23 Ago",
+    "price": "161€"
+  },
+  {
+    "outbound flight": "Jue, 26 Oct",
+    "return flight": null,
+    "price": "24€"
+  },
+  {
+    "outbound flight": "Mar, 29 Ago",
+    "return flight": "Mié, 30 Ago",
+    "price": "118€"
+  },
+  {
+    "outbound flight": "Vie, 01 Sep",
+    "return flight": "Dom, 03 Sep",
+    "price": "246€"
+  },
+  {
+    "outbound flight": "Mar, 05 Sep",
+    "return flight": "Vie, 08 Sep",
+    "price": "193€"
+  },
+  {
+    "outbound flight": "Dom, 10 Sep",
+    "return flight": "Jue, 14 Sep",
+    "price": "143€"
+  }
+]
