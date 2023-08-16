@@ -1,7 +1,7 @@
 name: Scrape Edreams website
 on:
   schedule:
-    - cron: "0 */5 * * *"
+    - cron: "*/5 * * * *"
 jobs:
   scrape:
     runs-on: ubuntu-latest
@@ -22,8 +22,7 @@ jobs:
       run: node main/index.js
 
     - name: Commit changes
-      uses: test-room-7/action-update-file@v1
-    - run: |
-        git config user.name ScrapingBot
-        git diff --quiet && git diff --staged --quiet || git commit -am "[bot] update latest flight offers "
-        git push origin main
+      run: |
+      git config user.name ScrapingBot
+      git diff --quiet && git diff --staged --quiet || git commit -am "[bot] update latest flight offers"
+      git push origin main
