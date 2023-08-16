@@ -1,7 +1,7 @@
 name: Scrape Edreams website
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "0 */8 * * *"
 jobs:
   scrape:
     runs-on: ubuntu-latest
