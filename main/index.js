@@ -19,7 +19,6 @@ const userAgentStrings = [
     const FlightInfo = await page.locator('[class=discount-color]')
     text = await FlightInfo.allInnerTexts()
     const vuelos = getFlightOffers(text)
-    console.log(vuelos)
     writeDBFile(vuelos)
     browser.close();
 })();
