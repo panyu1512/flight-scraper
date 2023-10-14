@@ -34,7 +34,7 @@ function writeDBFile(data){
 
     fs.writeFile('./db/flightOffers.json', jsonData, 'utf8', (err) => {
       if (err) {
-        console.error('Error writing JSON file:', err);
+        logger.error('Error writing JSON file:', err);
       } else {
         logger.info('JSON file with flight data has been created successfully.');
       }
