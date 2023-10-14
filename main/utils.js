@@ -1,3 +1,4 @@
+const logger = require('pino')()
 const fs = require('fs');
 
 function getFlightOffers(data){
@@ -35,7 +36,7 @@ function writeDBFile(data){
       if (err) {
         console.error('Error writing JSON file:', err);
       } else {
-        console.log('JSON file with flight data has been created successfully.');
+        logger.info('JSON file with flight data has been created successfully.');
       }
     });
 };
