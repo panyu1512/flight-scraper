@@ -1,32 +1,32 @@
 [
   {
-    "outbound flight": "(PMI-OPO) Vie., 16 Feb.",
-    "return flight": "(OPO-PMI) Dom., 18 Feb.",
-    "price": "136€"
+    "outbound flight": "(PMI-OPO) Lun., 11 Mar.",
+    "return flight": "(OPO-PMI) Lun., 11 Mar.",
+    "price": "169€"
   },
   {
-    "outbound flight": "(PMI-OPO) Jue., 18 Abr.",
+    "outbound flight": "(PMI-OPO) Mié., 03 Abr.",
     "return flight": null,
-    "price": "27€"
+    "price": "24€"
   },
   {
-    "outbound flight": "(PMI-OPO) Sáb., 10 Feb.",
-    "return flight": "(OPO-PMI) Mar., 13 Feb.",
-    "price": "71€"
-  },
-  {
-    "outbound flight": "(PMI-OPO) Mar., 06 Feb.",
-    "return flight": "(OPO-PMI) Jue., 08 Feb.",
-    "price": "118€"
-  },
-  {
-    "outbound flight": "(PMI-OPO) Mar., 20 Feb.",
-    "return flight": "(OPO-PMI) Sáb., 24 Feb.",
-    "price": "105€"
-  },
-  {
-    "outbound flight": "(PMI-OPO) Mar., 27 Feb.",
+    "outbound flight": "(PMI-OPO) Lun., 26 Feb.",
     "return flight": "(OPO-PMI) Jue., 29 Feb.",
-    "price": "102€"
+    "price": "76€"
+  },
+  {
+    "outbound flight": "(PMI-OPO) Mié., 21 Feb.",
+    "return flight": "(OPO-PMI) Vie., 23 Feb.",
+    "price": "162€"
+  },
+  {
+    "outbound flight": "(PMI-OPO) Vie., 01 Mar.",
+    "return flight": "(OPO-PMI) Dom., 03 Mar.",
+    "price": "223€"
+  },
+  {
+    "outbound flight": "(PMI-OPO) Vie., 08 Mar.",
+    "return flight": "(OPO-PMI) Dom., 10 Mar.",
+    "price": "167€"
   }
 ]
