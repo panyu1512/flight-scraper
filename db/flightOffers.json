@@ -1,32 +1,32 @@
 [
   {
-    "outbound flight": "(PMI-OPO) Vie., 07 Jun.",
-    "return flight": "(OPO-PMI) Lun., 10 Jun.",
-    "price": "158€"
+    "outbound flight": "(PMI-OPO) Lun., 10 Jun.",
+    "return flight": "(OPO-PMI) Mar., 11 Jun.",
+    "price": "115€"
   },
   {
-    "outbound flight": "(PMI-OPO) Mar., 28 May.",
+    "outbound flight": "(PMI-OPO) Mié., 29 May.",
     "return flight": null,
-    "price": "29€"
-  },
-  {
-    "outbound flight": "(PMI-OPO) Mar., 28 May.",
-    "return flight": "(OPO-PMI) Vie., 31 May.",
-    "price": "75€"
-  },
-  {
-    "outbound flight": "(PMI-OPO) Vie., 24 May.",
-    "return flight": "(OPO-PMI) Dom., 26 May.",
-    "price": "241€"
+    "price": "38€"
   },
   {
     "outbound flight": "(PMI-OPO) Lun., 03 Jun.",
-    "return flight": "(OPO-PMI) Lun., 03 Jun.",
-    "price": "222€"
+    "return flight": "(OPO-PMI) Mié., 05 Jun.",
+    "price": "88€"
   },
   {
-    "outbound flight": "(PMI-OPO) Vie., 14 Jun.",
-    "return flight": "(OPO-PMI) Dom., 16 Jun.",
-    "price": "245€"
+    "outbound flight": "(PMI-OPO) Mié., 29 May.",
+    "return flight": "(OPO-PMI) Vie., 31 May.",
+    "price": "124€"
+  },
+  {
+    "outbound flight": "(PMI-OPO) Jue., 13 Jun.",
+    "return flight": "(OPO-PMI) Vie., 14 Jun.",
+    "price": "114€"
+  },
+  {
+    "outbound flight": "(PMI-OPO) Lun., 17 Jun.",
+    "return flight": "(OPO-PMI) Jue., 20 Jun.",
+    "price": "148€"
   }
 ]
